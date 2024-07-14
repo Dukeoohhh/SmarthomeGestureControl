@@ -62,7 +62,7 @@ if exist %SCRIPT_DIR%%VENV_DIR%\Scripts\activate (
 )
 
 REM Run module 'HandTracking.py' in module directory
-cd module
+cd %CURRENT_DIR%/module
 python HandTrackingModule.py
 
 pause
