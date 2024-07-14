@@ -4,9 +4,7 @@ import numpy as np
 import mediapipe as mp
 import pickle
 from sklearn.neural_network import MLPClassifier
-from RoomElement import Room
-
-from google.protobuf import message_factory as _message_factory
+from Module.RoomElement import Room
 
 SystemStatus = False
 
@@ -42,7 +40,7 @@ def GestureControl(gesture, room):
 def main():
     # Load MLP Model for classify hand gestures
     mlpModel = MLPClassifier()
-    with open('Model/MLP.pkl', 'rb') as f:
+    with open('MLP.pkl', 'rb') as f:
         mlp = pickle.load(f)
     mlpModel = mlp
 
