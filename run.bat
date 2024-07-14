@@ -61,7 +61,7 @@ if exist %SCRIPT_DIR%%VENV_DIR%\Scripts\activate (
     pip install -r %SCRIPT_DIR%%REQUIREMENTS_FILE%
 )
 
-REM Run module 'HandTracking.py' in module directory
+REM Run module 'HandTrackingModule.py' in module directory
 cd %CURRENT_DIR%/module
 python HandTrackingModule.py
 
